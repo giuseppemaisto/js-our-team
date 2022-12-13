@@ -36,3 +36,13 @@ const Team =[
         foto: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
+
+//MILESTONE 1
+//3 - stampo su console per ogni oggetto, tutte le informazioni
+  //  3.1 - utilizzo ciclo for
+  let stampaTeam
+  for(let i = 0; i<Team.length;i++){
+    stampaTeam = Team[i];
+    //console.log(stampaTeam);
+    console.log(stampaTeam.nome , stampaTeam.ruolo, stampaTeam.foto);
+  }
