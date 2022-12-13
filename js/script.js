@@ -40,9 +40,20 @@ const Team =[
 //MILESTONE 1
 //3 - stampo su console per ogni oggetto, tutte le informazioni
   //  3.1 - utilizzo ciclo for
-  let stampaTeam
+  let stampaTeam 
   for(let i = 0; i<Team.length;i++){
     stampaTeam = Team[i];
     //console.log(stampaTeam);
     console.log(stampaTeam.nome , stampaTeam.ruolo, stampaTeam.foto);
   }
+
+  //MILESTONE 2
+  
+  //4. - Stampo sul Dom tutte le informazioni 
+  //4.1 attraverso js creo elemento div
+  //4.2 - stampo infomazioni in elemento 
+  //4.3 - considerare immagine come una stringa 
+ const divContent = document.getElementById('team')
+ for(let i = 0; i<Team.length; i++){
+    divContent.innerHTML +=   `  <div class="team">${Team[i].nome}, ${Team[i].ruolo}, ${Team[i].foto}</div>`;
+ }
